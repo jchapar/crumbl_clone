@@ -129,4 +129,44 @@ a {
   font-size: 1.2rem;
 }
 
+#details {
+  background-color: #fff;
+  color: #000;
+  padding: 3rem 0;
+}
+#details .flex-container {
+  align-items: center;
+  justify-content: center;
+}
+#details .flex-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#details .flex-container .content h2 {
+  font-size: 3rem;
+}
+#details .flex-container .content p {
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#details .flex-container .content .details-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#details .flex-container .content .details-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+#details .flex-container .content .details-content div p {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
