@@ -169,4 +169,47 @@ a {
   font-weight: bold;
 }
 
+#cookies {
+  padding: 2rem 0;
+}
+#cookies .cookies-header .cookies-banner {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+}
+#cookies .cookies-header .cookies-banner p {
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+#cookies .cookies-header .cookies-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1100px;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+#cookies .cookie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#cookies .cookie .cookie-text h2 {
+  font-size: 3rem;
+}
+#cookies .cookie .cookie-text p {
+  max-width: 600px;
+}
+#cookies .cookie .cookie-text .icons {
+  opacity: 0.5;
+}
+#cookies .cookie .cookie-text .icons small {
+  opacity: 0.5;
+}
+#cookies .cookie .cookie-image img {
+  width: 500px;
+}
+
 /*# sourceMappingURL=style.css.map */
