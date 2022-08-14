@@ -342,3 +342,50 @@ a {
     }
   }
 }
+
+// Expansion Section
+#expansion {
+  padding: 2rem 0;
+  .flex-container {
+    align-items: center;
+    justify-content: space-evenly;
+
+    .left-content,
+    .right-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        margin-right: 1rem;
+        width: 100px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h3 {
+          font-size: 1.5rem;
+          margin-bottom: 0.6rem;
+        }
+
+        p {
+          max-width: 200px;
+          margin-bottom: 1rem;
+        }
+
+        .button {
+          background-color: #000;
+          color: $white-color;
+          padding: 0.8rem;
+          border-radius: 2rem;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

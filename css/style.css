@@ -284,4 +284,49 @@ a {
   width: 6rem;
 }
 
+#expansion {
+  padding: 2rem 0;
+}
+#expansion .flex-container {
+  align-items: center;
+  justify-content: space-evenly;
+}
+#expansion .flex-container .left-content,
+#expansion .flex-container .right-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#expansion .flex-container .left-content img,
+#expansion .flex-container .right-content img {
+  margin-right: 1rem;
+  width: 100px;
+}
+#expansion .flex-container .left-content .content,
+#expansion .flex-container .right-content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#expansion .flex-container .left-content .content h3,
+#expansion .flex-container .right-content .content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+#expansion .flex-container .left-content .content p,
+#expansion .flex-container .right-content .content p {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+#expansion .flex-container .left-content .content .button,
+#expansion .flex-container .right-content .content .button {
+  background-color: #000;
+  color: #ffffff;
+  padding: 0.8rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=style.css.map */
