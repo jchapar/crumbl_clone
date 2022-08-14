@@ -301,3 +301,44 @@ a {
     }
   }
 }
+
+// Loyalty
+#loyalty {
+  margin: 2rem 0;
+  position: relative;
+
+  .section-bg {
+    background-color: #fad1dc;
+    min-height: 350px;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+  }
+
+  .flex-container {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 5rem;
+    z-index: 5;
+    background: transparent;
+
+    .loyalty-img {
+      width: 15rem;
+      transform: rotate(-10deg);
+    }
+
+    .content {
+      p {
+        font-weight: bold;
+        font-size: 2rem;
+        max-width: 400px;
+        margin-bottom: 1rem;
+      }
+
+      img {
+        width: 6rem;
+      }
+    }
+  }
+}
