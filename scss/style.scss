@@ -21,6 +21,10 @@ body {
   display: flex;
 }
 
+.grid-container {
+  display: grid;
+}
+
 img {
   object-fit: cover;
 }
@@ -28,6 +32,11 @@ img {
 a {
   text-decoration: none;
   color: #000;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
 }
 
 // Navbar
@@ -41,6 +50,7 @@ a {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 15;
 
   .navbar-items {
     display: flex;
@@ -384,6 +394,53 @@ a {
           border-radius: 2rem;
           text-transform: uppercase;
           font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 0;
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .grid-logo {
+        margin-bottom: 1rem;
+      }
+
+      .title {
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          margin-bottom: 0.5rem;
+          font-weight: 100;
+          color: #fff;
+        }
+      }
+
+      .socials {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+
+        i {
+          color: #fff;
+          cursor: pointer;
         }
       }
     }
