@@ -7,6 +7,7 @@
 body {
   background-color: #ffffff;
   font-family: "Montserrat", sans-serif;
+  position: relative;
 }
 
 .container {
@@ -60,6 +61,7 @@ li {
 }
 #navbar .navbar-items .left-content .toggle-button {
   margin-right: 3rem;
+  cursor: pointer;
 }
 #navbar .navbar-items .left-content .toggle-button img {
   width: 1rem;
@@ -88,6 +90,68 @@ li {
   padding: 1rem 2rem;
   border-radius: 3rem;
   text-transform: uppercase;
+}
+
+#toggle-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #000;
+  color: #fff;
+  width: 300px;
+  height: 100vh;
+  padding: 1rem;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
+}
+#toggle-nav.active {
+  transform: translateX(0%);
+}
+#toggle-nav .flex-container {
+  flex-direction: column;
+}
+#toggle-nav .flex-container .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #ccc;
+  padding-bottom: 2rem;
+}
+#toggle-nav .flex-container .actions .close {
+  cursor: pointer;
+}
+#toggle-nav .flex-container .nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 0;
+  border-bottom: 0.5px solid #ccc;
+}
+#toggle-nav .flex-container .nav-menu a {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: semi-bold;
+  margin: 1rem 0;
+}
+#toggle-nav .flex-container .socials {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+#toggle-nav .flex-container .socials i {
+  color: #fff;
+  margin: 0.5rem 0.5rem;
+}
+#toggle-nav .flex-container .footer-nav-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem 0;
+}
+#toggle-nav .flex-container .footer-nav-menu a {
+  color: #fff;
+  opacity: 0.7;
 }
 
 #hero {
