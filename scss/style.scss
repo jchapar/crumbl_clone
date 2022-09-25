@@ -47,6 +47,7 @@ li {
   width: 100%;
   top: 0;
   background: $white-color;
+  // background: black;
   padding: 1rem 1.5rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -145,15 +146,6 @@ li {
       padding: 2rem 0;
       border-bottom: 0.5px solid #ccc;
 
-      // &::before {
-      //   content: '';
-      //   top: 0;
-      //   left: 0;
-      //   right: 0;
-      //   bottom: 0;
-      //   background: rgba(0, 0, 0, 0.9);
-      // }
-
       a {
         color: #fff;
         font-size: 1.3rem;
@@ -169,6 +161,7 @@ li {
       i {
         color: #fff;
         margin: 0.5rem 0.5rem;
+        cursor: pointer;
       }
     }
 
@@ -529,3 +522,5 @@ li {
     }
   }
 }
+
+// @import 'media';
